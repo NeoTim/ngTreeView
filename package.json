@@ -1,0 +1,40 @@
+{
+  "version": "1.0.0",
+  "name": "ngTreeView",
+  "description": "A nice popover for Angular",
+  "main": "src/js/ng-tree-view.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/forsigner/ngTreeView.git"
+  },
+  "keywords": [
+    "ngTreeView",
+    "tree-view",
+    "tree view",
+    "angular-tree-view",
+    "angular tree view",
+    "bootstrap-treeview"
+  ],
+  "author": "forsigner",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/forsigner/ngTreeView/issues"
+  },
+  "homepage": "https://github.com/forsigner/ngTreeView#readme",
+  "devDependencies": {
+    "babel-preset-es2015": "6.1.2",
+    "babelify": "7.2.0",
+    "browserify": "12.0.1",
+    "gulp-cssnano": "2.1.1",
+    "gulp-less": "3.0.3",
+    "gulp-minify-css": "1.2.1",
+    "gulp-rename": "1.2.2",
+    "gulp-replace-name": "1.0.1",
+    "gulp-streamify": "1.0.2",
+    "gulp-uglify": "1.5.3",
+    "vinyl-source-stream": "1.1.0"
+  }
+}
