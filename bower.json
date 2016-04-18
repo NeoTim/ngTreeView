@@ -1,0 +1,27 @@
+{
+  "name": "ngTreeView",
+  "homepage": "https://github.com/forsigner/ngTreeView",
+  "description": "A nice popover for Angular",
+  "main": "dist/js/ngTreeView.js",
+  "keywords": [
+    "ngTreeView",
+    "tree-view",
+    "tree view",
+    "angular-tree-view",
+    "angular tree view",
+    "bootstrap-treeview"
+  ],
+  "authors": [
+    "forsigner"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  }
+}
