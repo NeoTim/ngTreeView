@@ -2,7 +2,7 @@
   "version": "1.0.0",
   "name": "ngTreeView",
   "description": "A nice popover for Angular",
-  "main": "src/js/ng-tree-view.js",
+  "main": "src/js/ngTreeView.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
