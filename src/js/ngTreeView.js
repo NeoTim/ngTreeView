@@ -8,7 +8,7 @@ function ngTreeView($compile, $timeout) {
   var times = 0;
   return {
     restrict: 'A',
-    link: function(scope, element, attrs) {
+    link: function (scope, element, attrs) {
       times++;
 
       // tree id
@@ -59,10 +59,10 @@ function ngTreeView($compile, $timeout) {
       scope[treeId] = scope[treeId] || {};
 
       // if node label clicks,
-      scope.selectNode = function(node, list) {
+      scope.selectNode = function (node, list) {
         scope.$emit('selectNodeSuccess', node);
 
-        if (node.children.length) {
+        if (node.children && node.children.length) {
           node.collapsed = !node.collapsed;
         }
 
@@ -76,7 +76,6 @@ function ngTreeView($compile, $timeout) {
         //set currentNode
         scope[treeId].currentNode = node;
       };
-
 
       // Rendering template.
       element.html('').append($compile(template)(scope));

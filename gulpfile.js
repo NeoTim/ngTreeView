@@ -12,7 +12,7 @@ var streamify = require('gulp-streamify');
 
 gulp.task('default', ['less', 'js', 'watch']);
 
-gulp.task('less', function() {
+gulp.task('less', function () {
   return gulp.src('./src/less/ngTreeView.less')
     .pipe(less())
     .pipe(gulp.dest('./dist/css'))
@@ -21,9 +21,9 @@ gulp.task('less', function() {
     .pipe(gulp.dest('./dist/css'));
 });
 
-gulp.task('js', function() {
+gulp.task('js', function () {
   return browserify('./src/js/ngTreeView.js')
-    .transform('babelify', {presets: 'es2015'})
+    .transform('babelify', { presets: 'es2015' })
     .bundle()
     .pipe(source('main.js'))
     .pipe(rename('ngTreeView.js'))
@@ -33,7 +33,7 @@ gulp.task('js', function() {
     .pipe(gulp.dest('./dist/js'));
 });
 
-gulp.task('watch', function() {
+gulp.task('watch', function () {
   gulp.watch(['./src/less/*.less'], ['less']);
   gulp.watch(['./src/js/**/*.js'], ['js']);
 });

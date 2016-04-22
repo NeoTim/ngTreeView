@@ -41,7 +41,7 @@ function ngTreeView($compile, $timeout) {
       scope.selectNode = function (node, list) {
         scope.$emit('selectNodeSuccess', node);
 
-        if (node.children.length) {
+        if (node.children && node.children.length) {
           node.collapsed = !node.collapsed;
         }
 
