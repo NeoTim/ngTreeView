@@ -10,33 +10,15 @@ div[tree-view] ul li {
   padding: 0;
   line-height: 2em;
 }
-div[tree-view] ul li .tree-view-node {
+div[tree-view] ul li > div {
   padding-left: 18px;
 }
 div[tree-view] ul li .tree-view-node.selected {
-  background: #f0f0f0;
+  color: #1abc9c;
 }
 div[tree-view] ul li .tree-view-node:hover {
-  background: #f0f0f0;
+  color: #1abc9c;
   cursor: pointer;
-}
-div[tree-view] ul li .level-1 {
-  padding-left: 20px;
-}
-div[tree-view] ul li .level-2 {
-  padding-left: 40px;
-}
-div[tree-view] ul li .level-3 {
-  padding-left: 60px;
-}
-div[tree-view] ul li .level-4 {
-  padding-left: 80px;
-}
-div[tree-view] ul li .level-5 {
-  padding-left: 16px;
-}
-div[tree-view] ul li .level-6 {
-  padding-left: 16px;
 }
 @font-face {
   font-family: 'fontello';

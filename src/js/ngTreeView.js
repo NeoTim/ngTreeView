@@ -30,7 +30,7 @@ function ngTreeView($compile, $timeout) {
       var template = `
           <ul>
             <li ng-repeat="node in ${treeModel}">
-              <div class="tree-view-node level-${times}" ng-class="{selected: node.selected}" ng-click="selectNode(node, ${treeModel})">
+              <div id="{{node._id}}" class="tree-view-node level-${times}" ng-class="{selected: node.selected}" ng-click="selectNode(node, ${treeModel})">
                   <i class="icon-angle-right" ng-if="node.${nodeChildren}.length && node.collapsed"></i>
                   <i class="icon-angle-down" ng-if="node.${nodeChildren}.length && !node.collapsed"></i>
                   <i class="icon-folder" ng-if="node.${nodeChildren}.length"></i>
