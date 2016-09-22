@@ -1,5 +1,5 @@
 {
-  "version": "1.0.3",
+  "version": "1.0.4",
   "name": "ngTreeView",
   "description": "A nice popover for Angular",
   "main": "src/js/ngTreeView.js",
