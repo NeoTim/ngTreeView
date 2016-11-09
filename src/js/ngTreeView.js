@@ -35,7 +35,7 @@ function ngTreeView($compile, $timeout) {
                   <i class="icon-angle-down" ng-if="node.${nodeChildren}.length && !node.collapsed"></i>
                   <i class="icon-folder" ng-if="node.${nodeChildren}.length"></i>
                   <i class="icon-doc-text" ng-if="!node.${nodeChildren}.length"></i>
-                  <span>{{node.${nodeLabel}}}</span>
+                  <span title="{{node.${nodeLabel}}}">{{node.${nodeLabel}}}</span>
               </div>
               <div
                 ng-if="node.${nodeChildren}.length"
